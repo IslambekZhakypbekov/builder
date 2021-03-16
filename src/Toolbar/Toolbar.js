@@ -9,7 +9,7 @@ const Toolbar = () => {
         <Logo/>
         <Nav/>
 
-        oolbar</div>
+        Toolbar</div>
      );
 }
  

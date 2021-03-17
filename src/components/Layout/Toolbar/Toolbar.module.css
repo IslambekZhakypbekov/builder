@@ -1,9 +1,7 @@
-
-
 .Toolbar{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 10px;
     background-color: tomato;
 
 }

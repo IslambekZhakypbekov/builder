@@ -1,6 +1,6 @@
 import classes from "./Layout.module.css"
 import Drawer from "../Drawer/Drawer.js";
-import Toolbar from "../Toolbar/Toolbar.js";
+import Toolbar from "./Toolbar/Toolbar.js";
 
 
 const Layout = ({children}) => {

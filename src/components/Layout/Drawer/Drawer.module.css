@@ -1,0 +1,14 @@
+.Drawer .content{
+    background-color: #DE0000;
+    width: 250px;
+    height: 500px;
+    top: 0;
+    left: 0;
+}
+
+.open{
+    transform: translateX(0);
+}
+.closed{
+    transform: translateX(-260);
+}

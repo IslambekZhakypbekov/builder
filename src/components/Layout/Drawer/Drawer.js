@@ -4,9 +4,10 @@ import Nav from "../../Nav/Nav.js";
 const Drawer = () => {
     return ( 
         <div className={classes.Drawer}>
+            <div className={[classes.content, classes.open].join("")}>
             <Logo/>
              <Nav/>
-            Drawer</div>
+            Drawer</div></div>
      );
 }
  

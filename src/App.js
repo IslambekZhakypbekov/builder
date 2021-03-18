@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <Layout>
        Restaurant table reservation via QR code by student Islam Zhakypbekov
-</Layout>
+      </Layout>
     </div>
   );
 }

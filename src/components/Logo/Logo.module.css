@@ -1,9 +1,11 @@
 .Logo img {
-    height: 50px;
+    width: 60px;
+    
 }
 .Logo{
     display: flex;
     align-items: center;
+  
     
 }
 
@@ -12,5 +14,6 @@
     font-weight: bold;
     font-size: 35px; 
     text-decoration: none;
+    padding-left: 15px;
 
 }

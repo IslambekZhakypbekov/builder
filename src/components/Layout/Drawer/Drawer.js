@@ -1,6 +1,5 @@
 import classes from "./Drawer.module.css";
-import Logo from "../../Logo/Logo.js";
-import Nav from "../../Nav/Nav.js";
+
 const Drawer = ( { open } ) => {
     const drawerClasses = [classes.content]
     if(open){

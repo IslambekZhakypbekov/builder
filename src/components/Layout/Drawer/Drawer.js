@@ -12,8 +12,7 @@ const Drawer = ( { open } ) => {
     return ( 
         <div className={classes.Drawer}>
             <div className={[classes.content, classes.open].join("")}>
-            <Logo/>
-             <Nav/>
+           
             Drawer</div></div>
      );
 }

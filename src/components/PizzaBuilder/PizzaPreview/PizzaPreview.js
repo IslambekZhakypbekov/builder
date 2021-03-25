@@ -7,7 +7,7 @@ const PizzaPreview = ({ ingredients }) => {
   const result = [];
   for (const ingredient in ingredients) {
     for (let i = 0; i < ingredients[ingredient]; i++) {
-      result.push(<PizzaIngredient type={ingredient} />)
+      result.push(<PizzaIngredient key={ingredient + i} type={ingredient} />)
     }
   }
 

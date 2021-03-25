@@ -6,7 +6,7 @@ import greenOliveBackground from "../../../images/greenOlive.svg";
 import redPepperBackground from "../../../images/redPepper.svg";
 import yellowPepperBackground from "../../../images/yellowPepper.svg";
 
-const PizzaIngredient = ({ type }) => {
+const PizzaIngredient = ({ type, fixed }) => {
   const types = {
     salami: { backgroundImage: `url(${salamiBackground})`, width: "35px", height: "35px" },
     tomato: { backgroundImage: `url(${tomatoBackground})`, width: "35px", height: "35px" },
@@ -37,9 +37,11 @@ const PizzaIngredient = ({ type }) => {
   }
 
   // Get random position for this ingredient.
-  const position = getPosition(types[type].width);
-  types[type].top = position.top + "px";
-  types[type].left = position.left + "px";
+  if (!fixed) {
+    const position = getPosition(types[type].width);
+    types[type].top = position.top + "px";
+    types[type].left = position.left + "px";
+  }
   // Get random rotation for this ingredient.
   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 

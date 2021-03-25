@@ -1,8 +1,16 @@
+import PizzaControl from "./PizzaControl/PizzaControl";
 import classes from "./PizzaControls.module.css";
 
-const PizzaControls = () => {
+const PizzaControls = ({ ingredients }) => {
+  const results = [];
+  for (const ingredient in ingredients) {
+    results.push(<PizzaControl type={ingredient} />)
+  }
+
   return (
-    <div className={classes.PizzaControls}>Controls</div>
+    <div className={classes.PizzaControls}>
+      {results}
+    </div>
   );
 }
 

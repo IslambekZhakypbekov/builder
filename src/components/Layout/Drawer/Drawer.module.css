@@ -14,11 +14,9 @@
 
 .open {
   transform: translateX(0);
-  z-index: 20;
 }
 .close {
   transform: translateX(-260px);
-  z-index: 19;
 }
 
 @media (min-width: 550px) {

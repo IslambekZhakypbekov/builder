@@ -1,19 +1,13 @@
 import Layout from "./components/Layout/Layout";
-import RestaurantBuilder from "./components/RestarauntBuilder/RestarauntBuilder";
+import PizzaBuilder from "./components/PizzaBuilder/PizzaBuilder";
 
+import "./App.css";
 
-
-
-import "./App.css"
-
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Layout>
-        <RestaurantBuilder/>
-        
-      
-       Restaurant table reservation via QR code by student Islam Zhakypbekov
+        <PizzaBuilder />
       </Layout>
     </div>
   );

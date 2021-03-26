@@ -1,3 +1,5 @@
+import React from "react";
+
 import classes from "./PizzaIngredient.module.css";
 import salamiBackground from "../../../images/salami.svg";
 import tomatoBackground from "../../../images/tomato.svg";
@@ -50,4 +52,4 @@ const PizzaIngredient = ({ type, fixed }) => {
   );
 }
 
-export default PizzaIngredient;
+export default React.memo(PizzaIngredient);

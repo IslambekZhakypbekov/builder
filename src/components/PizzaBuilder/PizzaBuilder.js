@@ -18,26 +18,19 @@ const PizzaBuilder = () => {
   const [ingredients, setIngredients] = useState({});
   const [price, setPrice] = useState(0);
   const [ordering, setOrdering] = useState(false);
-  useEffect(() => {
-    axios.get('https://builder-56e21-default-rtdb.firebaseio.com/default.json')
-    .then(response => {
-      setIngredients(response.data.ingredients)
-      setPrice(response.data.price)
-    })
-  },[]);
 
-  // useEffect(
-  //   () => axios
-  //     .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
-  //     .then(response => {
-  //       setPrice(response.data.price);
+  useEffect(
+    () => axios
+      .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
+      .then(response => {
+        setPrice(response.data.price);
 
-  //       // For arrays
-  //       // setIngredients(Object.values(response.data.ingredients));
-  //       // For objects
-  //       setIngredients(response.data.ingredients);
-  //     }), []
-  // );
+        // For arrays
+        // setIngredients(Object.values(response.data.ingredients));
+        // For objects
+        setIngredients(response.data.ingredients);
+      }), []
+  );
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };

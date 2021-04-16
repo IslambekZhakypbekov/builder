@@ -1,11 +1,11 @@
 import classes from "./Logo.module.css";
-// import logo from "../../../images/logo.svg";
+import logo from "../../../images/logo.svg";
 
 const Logo = () => {
   return (
     <div className={classes.Logo}>
-      <img  alt="Logo of the Pizza project" />
-      <div></div>
+      <img src={logo} alt="Logo of the Pizza project" />
+      <div>Pizza</div>
     </div>
   );
 }

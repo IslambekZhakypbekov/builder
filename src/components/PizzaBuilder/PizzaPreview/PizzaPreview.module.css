@@ -2,8 +2,8 @@
   flex: 0 0 400px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 1rem;
+  justify-content: center;
 }
 .pizza {
   width: 400px;

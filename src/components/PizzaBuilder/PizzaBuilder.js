@@ -5,6 +5,8 @@ import classes from "./PizzaBuilder.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Modal from "../UI/Modal/Modal";
+import OrderSummary from "./OrderSummary/OrderSummary";
+import Button from "../UI/Button/Button";
 
 const PizzaBuilder = () => {
   const prices = {
@@ -19,8 +21,10 @@ const PizzaBuilder = () => {
   const [price, setPrice] = useState(0);
   const [ordering, setOrdering] = useState(false);
 
-  useEffect(
-    () => axios
+  useEffect(loadDefaults, []);
+
+  function loadDefaults() {
+    axios
       .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
       .then(response => {
         setPrice(response.data.price);
@@ -29,8 +33,8 @@ const PizzaBuilder = () => {
         // setIngredients(Object.values(response.data.ingredients));
         // For objects
         setIngredients(response.data.ingredients);
-      }), []
-  );
+      });
+  }
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
@@ -56,6 +60,21 @@ const PizzaBuilder = () => {
     setOrdering(false);
   }
 
+  function finishOrdering() {
+    axios
+      .post('https://builder-a51d0-default-rtdb.firebaseio.com/orders.json', {
+        ingredients: ingredients,
+        price: price,
+        address: "1234 Jusaeva str",
+        phone: "0 777 777 777",
+        name: "Sadyr Japarov",
+      })
+      .then(() => {
+        setOrdering(false);
+        loadDefaults();
+      });
+  }
+
   return (
     <div className={classes.PizzaBuilder}>
       <PizzaPreview
@@ -69,7 +88,14 @@ const PizzaBuilder = () => {
         />
       <Modal
         show={ordering}
-        cancel={stopOrdering}>Hello</Modal>
+        cancel={stopOrdering}>
+          <OrderSummary
+            ingredients={ingredients}
+            price={price}
+            />
+          <Button onClick={finishOrdering} green>Checkout</Button>
+          <Button onClick={stopOrdering}>Cancel</Button>
+        </Modal>
     </div>
   );
 }

@@ -1,13 +1,12 @@
 .Nav {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 @media (max-width: 549px) {
   .Nav {
     flex-direction: column;
-    margin-top: 1rem;
   }
 }

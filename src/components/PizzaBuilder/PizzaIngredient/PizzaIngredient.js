@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "./PizzaIngredient.module.css";
+// import classes from "./PizzaIngredient.module.css";
 // import salamiBackground from "../../../images/salami.svg";
 // import tomatoBackground from "../../../images/tomato.svg";
 // import blackOliveBackground from "../../../images/blackOlive.svg";

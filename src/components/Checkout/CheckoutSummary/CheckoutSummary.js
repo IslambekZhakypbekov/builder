@@ -1,6 +1,5 @@
 import classes from "./CheckoutSummary.module.css";
 import PizzaPreview from "../../PizzaBuilder/PizzaPreview/PizzaPreview";
-import Button from "../../UI/Button/Button";
 import CheckoutForm from '../ChekoutForm/CheckoutForm'
 
 

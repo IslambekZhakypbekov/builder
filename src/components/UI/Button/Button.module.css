@@ -11,6 +11,8 @@
 }
 .Button:not(:disabled):hover {
   background-color: rgb(0, 255, 234);
+  transition: 0.4s;
+
 }
 .Button:focus {
   outline: none;

@@ -24,7 +24,7 @@ const PizzaControls = ({
 
   return (
     <div className={classes.PizzaControls}>
-      <strong>Ingredients</strong>
+      <strong>Foods</strong>
       {results}
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>

@@ -1,3 +1,4 @@
+import axios from "axios";
 import CheckoutSummary from "./CheckoutSummary/CheckoutSummary"
 
 const Checkout = ({ history }) => {
@@ -13,17 +14,29 @@ const Checkout = ({ history }) => {
       name: data.get('name'),
       phone: data.get('phone'),
       address: data.get('address'),
+      ingredients: {
+        tomato: 0,
+        salami: 5,
+        greenOlives: 6,
+        blackOlives: 10,
+        redPepper: 10,
+        yellowPepper: 10,
+      }
     }
 
-    console.log(order)
+    axios.post('https://builder-56e21-default-rtdb.firebaseio.com/orders.json+', order)
+      .then(response => {
+        history.replace('/');
+      });
   }
+
   return (
     <div>
       <CheckoutSummary
         submitCallback={submitCallback}
-        cancelCallback={cancelCallback} />    </div>
-
+        cancelCallback={cancelCallback} />
+    </div>
   );
 }
-
+ 
 export default Checkout;

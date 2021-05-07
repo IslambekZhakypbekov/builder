@@ -14,9 +14,9 @@ const CheckoutSummary = ({ submitCallback, cancelCallback }) => {
         }} price={180} />
       </div>
       <div>
-      <CheckoutForm
-        submitCallback={submitCallback}
-        cancelCallback={cancelCallback} />
+        <CheckoutForm
+          submitCallback={submitCallback}
+          cancelCallback={cancelCallback} />
       </div>
     </div>
   );

@@ -1,8 +1,7 @@
 import PizzaIngredient from "../PizzaIngredient/PizzaIngredient";
 
 import classes from "./PizzaPreview.module.css";
-import ingredientsBackground from "../../../images/cheese.jpg";
-
+import ingredientsBackground from "../../../images/plate.png";
 const PizzaPreview = ({ ingredients, price }) => {
   const result = [];
   for (const ingredient in ingredients) {

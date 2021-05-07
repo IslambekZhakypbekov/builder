@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import Button from "../../../UI/Button/Button";
-import PizzaIngredient from "../../PizzaIngredient/PizzaIngredient";
+// import PizzaIngredient from "../../PizzaIngredient/PizzaIngredient";
 import classes from "./PizzaControl.module.css";
 
 const PizzaControl = ({ type, count }) => {

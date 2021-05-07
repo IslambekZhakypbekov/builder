@@ -4,10 +4,11 @@
   flex-wrap: wrap;
   margin-bottom: 1rem;
   justify-content: center;
+  margin-right: 50px;
 }
 .pizza {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 10%;
@@ -17,8 +18,9 @@
   align-items: center;
 }
 .ingredients {
-  width: 100%;
+  width: 470px;
   height: 100%;
+  
   border-radius: 10%;
   position: relative;
   background-size: cover;

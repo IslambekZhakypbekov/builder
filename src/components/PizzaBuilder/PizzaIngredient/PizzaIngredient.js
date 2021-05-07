@@ -1,7 +1,7 @@
 import React from "react";
 
-  import classes from "./PizzaIngredient.module.css";
-  import pirog1 from "../../../images/pirog.png";
+import classes from "./PizzaIngredient.module.css";
+import pirog1 from "../../../images/pirog.svg";
 // import tomatoBackground from "../../../images/tomato.svg";
 // import blackOliveBackground from "../../../images/blackOlive.svg";
 // import greenOliveBackground from "../../../images/greenOlive.svg";
@@ -9,17 +9,17 @@ import React from "react";
 // import yellowPepperBackground from "../../../images/yellowPepper.svg";
 
 const PizzaIngredient = ({ type, fixed }) => {
-  const types = {
+  const   types = {
     salami: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
-    // tomato: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
-    // blackOlive: { backgroundImage: `url(${pirog1})`, width: "10px", height: "10px" },
-    // greenOlive: { backgroundImage: `url(${pirog1})`, width: "10px", height: "10px" },
-    // redPepper: { backgroundImage: `url(${pirog1})`, width: "20px", height: "20px" },
-    // yellowPepper: { backgroundImage: `url(${pirog1} )`, width: "40px", height: "40px" },
+    tomato: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
+    blackOlive: { backgroundImage: `url(${pirog1})`, width: "10px", height: "10px" },
+    greenOlive: { backgroundImage: `url(${pirog1})`, width: "10px", height: "10px" },
+    redPepper: { backgroundImage: `url(${pirog1})`, width: "20px", height: "20px" },
+    yellowPepper: { backgroundImage: `url(${pirog1} )`, width: "70px", height: "70px" },
   };
 
   function getPosition(ingredientWidth) {
-    const pizzaDiameter = 380;
+    const pizzaDiameter = 475;
     const pizzaRadius = pizzaDiameter / 2;
     const ingredientRadius = parseInt(ingredientWidth) / 2;
 
@@ -35,8 +35,10 @@ const PizzaIngredient = ({ type, fixed }) => {
         top: ingredientTop - ingredientRadius,
         left: ingredientLeft - ingredientRadius
       }
-      : getPosition(ingredientWidth);
-  }
+ 
+     : getPosition(ingredientWidth);
+
+    }
 
   if (!fixed) {
     const position = getPosition(types[type].width);
@@ -46,8 +48,8 @@ const PizzaIngredient = ({ type, fixed }) => {
   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
-    <div className={classes.PizzaIngredient} ></div>
+    <div className={classes.PizzaIngredient} style={types[type]}></div>
   );
 }
-// style={types[type]}
+
 export default React.memo(PizzaIngredient);

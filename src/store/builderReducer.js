@@ -7,7 +7,7 @@ const initialState = {
         greenOlive: 10,
         blackOlive: 10,
     },
-    price: 200,
+    price: 180,
 };
 
 const prices = {

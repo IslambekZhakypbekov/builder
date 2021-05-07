@@ -1,7 +1,7 @@
 import axios from "axios";
 import CheckoutSummary from "./CheckoutSummary/CheckoutSummary"
 import { useSelector } from "react-redux";
-import PizzaPreview from "../PizzaBuilder/PizzaPreview/PizzaPreview"
+  // import PizzaPreview from "../PizzaBuilder/PizzaPreview/PizzaPreview"
 
 const Checkout = ({ history }) => {
   const ingredients = useSelector(state => state.ingredients);
@@ -32,7 +32,7 @@ const Checkout = ({ history }) => {
 
   return (
     <div>
-      <PizzaPreview ingredients={ingredients} price={price} />
+      {/* <PizzaPreview ingredients={ingredients} price={price} /> */}
       <CheckoutSummary
         submitCallback={submitCallback}
         cancelCallback={cancelCallback} />

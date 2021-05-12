@@ -4,8 +4,8 @@ import classes from "./Logo.module.css";
 const Logo = () => {
   return (
     <div className={classes.Logo}>
-      {/* <img src={logo} alt="Logo of the Restaraunt project" /> */}
-      <div className={classes.Restoran}>Restaraunt</div>
+      {/* <img src={logo} alt="Logo of the Pie project" /> */}
+      <div className={classes.Restoran}>Pies</div>
     </div>
   );
 }

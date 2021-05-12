@@ -12,9 +12,9 @@ const PieIngredient = ({ type, fixed }) => {
   const types = {
     salami: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
     tomato: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
-    blackOlive: { backgroundImage: `url(${pirog1})`, width: "10px", height: "10px" },
-    greenOlive: { backgroundImage: `url(${pirog1})`, width: "10px", height: "10px" },
-    redPepper: { backgroundImage: `url(${pirog1})`, width: "20px", height: "20px" },
+    blackOlive: { backgroundImage: `url(${pirog1})`, width: "50px", height: "50px" },
+    greenOlive: { backgroundImage: `url(${pirog1})`, width: "50px", height: "50px" },
+    redPepper: { backgroundImage: `url(${pirog1})`, width: "50px", height: "50px" },
     yellowPepper: { backgroundImage: `url(${pirog1} )`, width: "70px", height: "70px" },
   };
 

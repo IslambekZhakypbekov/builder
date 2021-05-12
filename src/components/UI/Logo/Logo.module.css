@@ -2,7 +2,12 @@
   display: flex;
   align-items: center;
 }
+
 .Logo img {
   height: 3rem;
   margin: .5rem;
+}
+
+.Restoran {
+  font-size: 50px;
 }

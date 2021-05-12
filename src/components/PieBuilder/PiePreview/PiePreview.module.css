@@ -6,25 +6,26 @@
   justify-content: center;
   margin-right: 50px;
 }
+
 .Pie {
   width: 500px;
   height: 500px;
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 10%;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .ingredients {
   width: 470px;
   height: 100%;
-  
   border-radius: 10%;
   position: relative;
   background-size: cover;
 }
+
 .price {
   background-color: rgb(7, 31, 165);
   border-radius: 0rem;

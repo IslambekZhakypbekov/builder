@@ -17,7 +17,7 @@ const prices = {
     blackOlive: .3,
     redPepper: 2,
     yellowPepper: 1,
-  };
+};
 const builderReducer = (state = initialState, action) => {
     const newState = { ...state };
 

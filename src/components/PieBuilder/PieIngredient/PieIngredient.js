@@ -9,7 +9,7 @@ import pirog1 from "../../../images/pirog.svg";
 // import yellowPepperBackground from "../../../images/yellowPepper.svg";
 
 const PieIngredient = ({ type, fixed }) => {
-  const   types = {
+  const types = {
     salami: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
     tomato: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
     blackOlive: { backgroundImage: `url(${pirog1})`, width: "10px", height: "10px" },
@@ -35,10 +35,10 @@ const PieIngredient = ({ type, fixed }) => {
         top: ingredientTop - ingredientRadius,
         left: ingredientLeft - ingredientRadius
       }
- 
-     : getPosition(ingredientWidth);
 
-    }
+      : getPosition(ingredientWidth);
+
+  }
 
   if (!fixed) {
     const position = getPosition(types[type].width);

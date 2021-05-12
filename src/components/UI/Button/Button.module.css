@@ -9,14 +9,16 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
+
 .Button:not(:disabled):hover {
   background-color: rgb(0, 255, 234);
   transition: 0.4s;
-
 }
+
 .Button:focus {
   outline: none;
 }
+
 .Button:disabled {
   opacity: .5;
 }
@@ -24,6 +26,7 @@
 .green {
   background-color: rgb(0, 7, 109);
 }
+
 .green:not(:disabled):hover {
   background-color: rgb(0, 255, 234);
 }

@@ -1,7 +1,9 @@
 import { useDispatch } from "react-redux";
+
+import classes from "./PieControl.module.css";
+
 import Button from "../../../UI/Button/Button";
 // import PieIngredient from "../../PieIngredient/PieIngredient";
-import classes from "./PieControl.module.css";
 
 const PieControl = ({ type, count }) => {
   const dispatch = useDispatch();

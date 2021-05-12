@@ -5,7 +5,6 @@
   top: 0;
   left: 0;
   z-index: 1;
-
   font-size: 2rem;
   color: white;
   background-color: rgb(7, 31, 165);
@@ -16,12 +15,13 @@
 .open {
   transform: translateX(0);
 }
+
 .close {
   transform: translateX(-260px);
 }
 
 @media (min-width: 550px) {
-  .Drawer  {
+  .Drawer {
     display: none;
   }
 }

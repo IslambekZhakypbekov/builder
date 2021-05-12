@@ -1,8 +1,10 @@
+import "./App.css";
+
+
 import Layout from "./components/Layout/Layout";
-import PizzaBuilder from "./components/PizzaBuilder/PizzaBuilder";
+import PieBuilder from "./components/PieBuilder/PieBuilder";
 import Checkout from "./components/Checkout/Checkout";
 
-import "./App.css";
 import { Redirect, Route, Switch } from "react-router";
 
 const App = () => {
@@ -10,7 +12,7 @@ const App = () => {
     <div className="App">
       <Layout>
         <Switch>
-          <Route path="/" component={PizzaBuilder} exact />
+          <Route path="/" component={PieBuilder} exact />
           <Route path="/checkout" component={Checkout} />
           <Redirect to="/" />
         </Switch>

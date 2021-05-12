@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "./PizzaIngredient.module.css";
+import classes from "./PieIngredient.module.css";
 import pirog1 from "../../../images/pirog.svg";
 // import tomatoBackground from "../../../images/tomato.svg";
 // import blackOliveBackground from "../../../images/blackOlive.svg";
@@ -8,7 +8,7 @@ import pirog1 from "../../../images/pirog.svg";
 // import redPepperBackground from "../../../images/redPepper.svg";
 // import yellowPepperBackground from "../../../images/yellowPepper.svg";
 
-const PizzaIngredient = ({ type, fixed }) => {
+const PieIngredient = ({ type, fixed }) => {
   const   types = {
     salami: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
     tomato: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
@@ -19,18 +19,18 @@ const PizzaIngredient = ({ type, fixed }) => {
   };
 
   function getPosition(ingredientWidth) {
-    const pizzaDiameter = 475;
-    const pizzaRadius = pizzaDiameter / 2;
+    const PieDiameter = 475;
+    const PieRadius = PieDiameter / 2;
     const ingredientRadius = parseInt(ingredientWidth) / 2;
 
-    const ingredientTop = Math.round(Math.random() * pizzaDiameter);
-    const ingredientLeft = Math.round(Math.random() * pizzaDiameter);
+    const ingredientTop = Math.round(Math.random() * PieDiameter);
+    const ingredientLeft = Math.round(Math.random() * PieDiameter);
 
     const distance = Math.sqrt(
-      Math.pow(ingredientTop - pizzaRadius, 2) + Math.pow(ingredientLeft - pizzaRadius, 2)
+      Math.pow(ingredientTop - PieRadius, 2) + Math.pow(ingredientLeft - PieRadius, 2)
     ) + ingredientRadius;
 
-    return distance < pizzaRadius
+    return distance < PieRadius
       ? {
         top: ingredientTop - ingredientRadius,
         left: ingredientLeft - ingredientRadius
@@ -48,8 +48,8 @@ const PizzaIngredient = ({ type, fixed }) => {
   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
-    <div className={classes.PizzaIngredient} style={types[type]}></div>
+    <div className={classes.PieIngredient} style={types[type]}></div>
   );
 }
 
-export default React.memo(PizzaIngredient);
+export default React.memo(PieIngredient);

@@ -1,13 +1,13 @@
 import { useDispatch } from "react-redux";
 import Button from "../../../UI/Button/Button";
-// import PizzaIngredient from "../../PizzaIngredient/PizzaIngredient";
-import classes from "./PizzaControl.module.css";
+// import PieIngredient from "../../PieIngredient/PieIngredient";
+import classes from "./PieControl.module.css";
 
-const PizzaControl = ({ type, count }) => {
+const PieControl = ({ type, count }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className={classes.PizzaControl}>
+    <div className={classes.PieControl}>
       <Button onClick={() => dispatch({ type: "ADD_INGREDIENT", ingredient: type })}>+</Button>
       <div className={classes.ingredient}>
         Pies
@@ -17,4 +17,4 @@ const PizzaControl = ({ type, count }) => {
   );
 }
 
-export default PizzaControl;
+export default PieControl;

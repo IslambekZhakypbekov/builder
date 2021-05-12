@@ -1,18 +1,19 @@
-import PizzaIngredient from "../PizzaIngredient/PizzaIngredient";
+import classes from "./PiePreview.module.css";
 
-import classes from "./PizzaPreview.module.css";
+import PieIngredient from "../PieIngredient/PieIngredient";
+
 import ingredientsBackground from "../../../images/plate.png";
-const PizzaPreview = ({ ingredients, price }) => {
+const PiePreview = ({ ingredients, price }) => {
   const result = [];
   for (const ingredient in ingredients) {
     for (let i = 0; i < ingredients[ingredient]; i++) {
-      result.push(<PizzaIngredient key={ingredient + i} type={ingredient} />)
+      result.push(<PieIngredient key={ingredient + i} type={ingredient} />)
     }
   }
 
   return (
-    <div className={classes.PizzaPreview}>
-      <div className={classes.pizza}>
+    <div className={classes.PiePreview}>
+      <div className={classes.Pie}>
         <div
           className={classes.ingredients}
           style={{ backgroundImage: `url(${ingredientsBackground})` }}>
@@ -24,4 +25,4 @@ const PizzaPreview = ({ ingredients, price }) => {
   );
 }
 
-export default PizzaPreview;
+export default PiePreview;

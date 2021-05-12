@@ -1,14 +1,16 @@
-import PizzaPreview from "./PizzaPreview/PizzaPreview";
-import PizzaControls from "./PizzaControls/PizzaControls";
-
-import classes from "./PizzaBuilder.module.css";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+
+import classes from "./PieBuilder.module.css";
+
+
+import PiePreview from "./PiePreview/PiePreview";
+import PieControls from "./PieControls/PieControls";
 import Modal from "../UI/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button";
-import { useSelector } from "react-redux";
 
-const PizzaBuilder = ({ history }) => {
+const PieBuilder = ({ history }) => {
   const ingredients = useSelector(state => state.ingredients);
   const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
@@ -43,11 +45,11 @@ const PizzaBuilder = ({ history }) => {
   }
 
   return (
-    <div className={classes.PizzaBuilder}>
-      <PizzaPreview
+    <div className={classes.PieBuilder}>
+      <PiePreview
         ingredients={ingredients}
         price={price} />
-      <PizzaControls
+      <PieControls
         ingredients={ingredients}
         startOrdering={startOrdering}
       />
@@ -65,4 +67,4 @@ const PizzaBuilder = ({ history }) => {
   );
 }
 
-export default PizzaBuilder;
+export default PieBuilder;

@@ -1,8 +1,9 @@
-import Button from "../../UI/Button/Button";
-import PizzaControl from "./PieControl/PieControl";
-import classes from "./PizzaControls.module.css";
+import classes from "./PieControls.module.css";
 
-const PizzaControls = ({
+import Button from "../../UI/Button/Button";
+import PieControl from "./PieControl/PieControl";
+
+const PieControls = ({
   ingredients,
   startOrdering
 }) => {
@@ -10,14 +11,14 @@ const PizzaControls = ({
   let total = 0;
   for (const ingredient in ingredients) {
     total += ingredients[ingredient];
-    results.push(<PizzaControl
+    results.push(<PieControl
       key={ingredient}
       count={ingredients[ingredient]}
       type={ingredient} />)
   }
 
   return (
-    <div className={classes.PizzaControls}>
+    <div className={classes.PieControls}>
       <strong>Pies</strong>
       {results}
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
@@ -25,4 +26,4 @@ const PizzaControls = ({
   );
 }
 
-export default PizzaControls;
+export default PieControls;

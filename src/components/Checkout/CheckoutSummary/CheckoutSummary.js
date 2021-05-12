@@ -1,5 +1,6 @@
 import classes from "./CheckoutSummary.module.css";
-import PizzaPreview from "../../PizzaBuilder/PizzaPreview/PizzaPreview";
+
+import PiePreview from "../../PieBuilder/PiePreview/PiePreview";
 import CheckoutForm from '../ChekoutForm/CheckoutForm'
 
 
@@ -7,7 +8,7 @@ const CheckoutSummary = ({ submitCallback, cancelCallback }) => {
   return (
     <div className={classes.CheckoutSummary}>
       <div>
-        <PizzaPreview ingredients={{
+        <PiePreview ingredients={{
           tomato: 5,
           salami: 10,
           greenOlive: 50,

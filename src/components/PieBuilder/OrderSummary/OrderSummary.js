@@ -6,11 +6,11 @@ const OrderSummary = ({ ingredients, price }) => {
     salami: "Pie",
     greenOlive: "Pie",
     blackOlive: "Pie",
-    redPepper: "Pie",
+    redPepper: "Pie ",
     yellowPepper: "Pie",
   }
   const results = Object.keys(ingredients)
-    .map(type => <li key={type}>{labels[type]}: {ingredients[type]}</li>);
+    .map(type => <li>{labels[type]}: {ingredients[type]}</li>);
 
   return (
     <div className={classes.OrderSummary}>

@@ -1,6 +1,6 @@
 import classes from "./PiePreview.module.css";
 
-import PieIngredient from "../PieIngredient/PieIngredient";
+import PieIngredient from "../Pies/Pies";
 
 import ingredientsBackground from "../../../images/plate.png";
 const PiePreview = ({ ingredients, price }) => {
@@ -13,14 +13,15 @@ const PiePreview = ({ ingredients, price }) => {
 
   return (
     <div className={classes.PiePreview}>
-      <div className={classes.Pie}>
-        <div
-          className={classes.ingredients}
-          style={{ backgroundImage: `url(${ingredientsBackground})` }}>
-          {result}
+      
+        <div className={classes.Pie}>
+        <div className={classes.ingredients}
+            style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+            <div className={classes.div}>{result} </div>
+          </div>
         </div>
-      </div>
-      <div className={classes.price}>{price} som</div>
+     
+      <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>
   );
 }

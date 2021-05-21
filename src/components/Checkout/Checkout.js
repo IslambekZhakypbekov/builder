@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../../axios";
 import { useSelector } from "react-redux";
 
 
@@ -26,7 +26,7 @@ const Checkout = ({ history }) => {
       price: price,
     }
 
-    axios.post('https://builder-56e21-default-rtdb.firebaseio.com/orders.json+', order)
+    axios.post('https://builder-56e21-default-rtdb.firebaseio.com/orders.json', order)
       .then(response => {
         history.replace('/');
       });

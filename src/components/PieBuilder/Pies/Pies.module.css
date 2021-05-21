@@ -1,0 +1,5 @@
+.PieIngredient {
+  position: absolute;
+  z-index: .9;
+  background-size: cover;
+}

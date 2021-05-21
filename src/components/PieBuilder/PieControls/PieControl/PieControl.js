@@ -7,12 +7,19 @@ import Button from "../../../UI/Button/Button";
 
 const PieControl = ({ type, count }) => {
   const dispatch = useDispatch();
-
+  const labels = {
+    tomato: "American Pie",
+    salami: "Pie",
+    greenOlive: "Cake",
+    blackOlive: "Tort",
+    redPepper: "Rort",
+    yellowPepper: "Tort",
+  }
   return (
     <div className={classes.PieControl}>
       <Button onClick={() => dispatch({ type: "ADD_INGREDIENT", ingredient: type })}>+</Button>
       <div className={classes.ingredient}>
-        Pies
+        {labels[type]}
       </div>
       <Button onClick={() => dispatch({ type: "REMOVE_INGREDIENT", ingredient: type })} disabled={!count}>-</Button>
     </div>

@@ -1,21 +1,21 @@
 import React from "react";
 
-import classes from "./PieIngredient.module.css";
+import classes from "./Pies.module.css";
 import pirog1 from "../../../images/pirog.svg";
-// import tomatoBackground from "../../../images/tomato.svg";
-// import blackOliveBackground from "../../../images/blackOlive.svg";
-// import greenOliveBackground from "../../../images/greenOlive.svg";
-// import redPepperBackground from "../../../images/redPepper.svg";
-// import yellowPepperBackground from "../../../images/yellowPepper.svg";
+import keks from "../../../images/keks.png";
+import pirog2 from "../../../images/pirog2.svg";
+import cake from "../../../images/cake.svg";
+import cake2 from "../../../images/cake2.svg";
+import pirog3 from "../../../images/pirog3.png";
 
 const PieIngredient = ({ type, fixed }) => {
   const types = {
     salami: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
-    tomato: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
-    blackOlive: { backgroundImage: `url(${pirog1})`, width: "50px", height: "50px" },
-    greenOlive: { backgroundImage: `url(${pirog1})`, width: "50px", height: "50px" },
-    redPepper: { backgroundImage: `url(${pirog1})`, width: "50px", height: "50px" },
-    yellowPepper: { backgroundImage: `url(${pirog1} )`, width: "70px", height: "70px" },
+    tomato: { backgroundImage: `url(${keks})`, width: "50px", height: "50px" },
+    blackOlive: { backgroundImage: `url(${pirog2})`, width: "35px", height: "35px" },
+    greenOlive: { backgroundImage: `url(${cake})`, width: "30px", height: "30px" },
+    redPepper: { backgroundImage: `url(${cake2})`, width: "30px", height: "30px" },
+    yellowPepper: { backgroundImage: `url(${pirog3} )`, width: "35px", height: "35px" },
   };
 
   function getPosition(ingredientWidth) {
@@ -30,7 +30,8 @@ const PieIngredient = ({ type, fixed }) => {
       Math.pow(ingredientTop - PieRadius, 2) + Math.pow(ingredientLeft - PieRadius, 2)
     ) + ingredientRadius;
 
-    return distance < PieRadius
+    return distance < 
+    PieRadius
       ? {
         top: ingredientTop - ingredientRadius,
         left: ingredientLeft - ingredientRadius

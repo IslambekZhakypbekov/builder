@@ -7,6 +7,7 @@ import pirog2 from "../../../images/pirog2.svg";
 import cake from "../../../images/cake.svg";
 import cake2 from "../../../images/cake2.svg";
 import pirog3 from "../../../images/pirog3.png";
+// import yellowPepperBackground from "../../../images/yellowPepper.svg";
 
 const PieIngredient = ({ type, fixed }) => {
   const types = {
@@ -16,6 +17,7 @@ const PieIngredient = ({ type, fixed }) => {
     greenOlive: { backgroundImage: `url(${cake})`, width: "30px", height: "30px" },
     redPepper: { backgroundImage: `url(${cake2})`, width: "30px", height: "30px" },
     yellowPepper: { backgroundImage: `url(${pirog3} )`, width: "35px", height: "35px" },
+    yellowPepper: { backgroundImage: `url(${pirog1} )`, width: "70px", height: "70px" },
   };
 
   function getPosition(ingredientWidth) {
@@ -46,7 +48,7 @@ const PieIngredient = ({ type, fixed }) => {
     types[type].top = position.top + "px";
     types[type].left = position.left + "px";
   }
-  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+  // types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
     <div className={classes.PieIngredient} style={types[type]}></div>

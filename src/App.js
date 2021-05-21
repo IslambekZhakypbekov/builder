@@ -4,6 +4,8 @@ import "./App.css";
 import Layout from "./components/Layout/Layout";
 import PieBuilder from "./components/PieBuilder/PieBuilder";
 import Checkout from "./components/Checkout/Checkout";
+// import background from "./images/background.jpg"
+
 
 
 import { Redirect, Route, Switch } from "react-router";
@@ -11,6 +13,7 @@ import { Redirect, Route, Switch } from "react-router";
 const App = () => {
   return (
     <div className="App">
+      <div className="background" ></div> 
       <Layout>
         <Switch>
           <Route path="/" component={PieBuilder} exact />

@@ -21,7 +21,7 @@ const PiePreview = ({ ingredients, price }) => {
           </div>
         </div>
      
-      <div className={classes.price}>{price.toFixed(1)} som</div>
+      <div className={classes.price}>{price} som</div>
     </div>
   );
 }

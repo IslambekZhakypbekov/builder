@@ -8,10 +8,10 @@ const CheckoutSummary = ({ submitCallback, cancelCallback }) => {
   return (
     <div className={classes.CheckoutSummary}>
       <div>
-        <PiePreview ingredients={{
-          tomato: 10,
-          salami: 10,
-          greenOlive: 50,
+        <PiePreview pies={{
+          applePie: 10,
+          cherryPie: 10,
+          bun: 50,
         }}
           price={180} />
       </div>

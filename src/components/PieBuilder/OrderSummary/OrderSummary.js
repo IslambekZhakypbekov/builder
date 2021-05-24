@@ -9,16 +9,18 @@ const OrderSummary = ({ ingredients, price }) => {
     bun:"Bun",
     pumpkinPie:"Pumpkin Pie",
   };
+
   const results = Object.keys(ingredients)
     .map(type => <li key={type}>{labels[type]}: {ingredients[type]}</li>);
-
   return (
     <div className={classes.OrderSummary}>
       <h3>Order summary</h3>
       <ul>
         {results}
       </ul>
-      <strong>Total price: {price.toFixed(0)} som</strong>
+
+     
+      <strong>Total price: {price} som</strong>
     </div>
   );
 }

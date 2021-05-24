@@ -1,21 +1,21 @@
 import React from "react";
 
 import classes from "./Pies.module.css";
-import pirog1 from "../../../images/pirog.svg";
-import keks from "../../../images/keks.png";
-import pirog2 from "../../../images/pirog2.svg";
-import cake from "../../../images/cake.svg";
-import cake2 from "../../../images/cake2.svg";
-import pirog3 from "../../../images/pirog3.png";
+import applePie from "../../../images/applePie.jpg";
+import cherryPie from "../../../images/cherryPie.png";
+import fruitCake from "../../../images/fruitCake.png";
+import nutPie from "../../../images/nutPie.png";
+import bun from "../../../images/bun.png";
+import pumpkinPie from "../../../images/pumpkinPie.png";
 
 const PieIngredient = ({ type, fixed }) => {
   const types = {
-    salami: { backgroundImage: `url(${pirog1})`, width: "35px", height: "35px" },
-    tomato: { backgroundImage: `url(${keks})`, width: "50px", height: "50px" },
-    blackOlive: { backgroundImage: `url(${pirog2})`, width: "35px", height: "35px" },
-    greenOlive: { backgroundImage: `url(${cake})`, width: "30px", height: "30px" },
-    redPepper: { backgroundImage: `url(${cake2})`, width: "30px", height: "30px" },
-    yellowPepper: { backgroundImage: `url(${pirog3} )`, width: "35px", height: "35px" },
+    applePie: { backgroundImage: `url(${applePie})`, width: "35px", height: "35px" },
+    cherryPie: { backgroundImage: `url(${cherryPie})`, width: "50px", height: "50px" },
+    fruitCake: { backgroundImage: `url(${fruitCake})`, width: "35px", height: "35px" },
+    nutPie: { backgroundImage: `url(${nutPie})`, width: "30px", height: "30px" },
+    bun: { backgroundImage: `url(${bun})`, width: "30px", height: "30px" },
+    pumpkinPie: { backgroundImage: `url(${pumpkinPie  } )`, width: "35px", height: "35px" },
   };
 
   function getPosition(ingredientWidth) {

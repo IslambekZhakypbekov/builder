@@ -1,4 +1,4 @@
-import { ADD_INGREDIENT, REMOVE_INGREDIENT, SET_INGREDIENTS } from "../actions/types";
+import { ADD_PIES, REMOVE_PIES, SET_PIES } from "../actions/types";
 
 const initialState = {
   ingredients: {
@@ -18,15 +18,15 @@ const builder = (state = initialState, action) => {
   const newState = { ...state };
 
   switch (action.type) {
-    case ADD_INGREDIENT:
+    case ADD_PIES:
       newState.ingredients[action.ingredient]++;
       newState.price += prices[action.ingredient];
       break;
-    case REMOVE_INGREDIENT:
+    case REMOVE_PIES:
       newState.ingredients[action.ingredient]--;
       newState.price -= prices[action.ingredient];
       break;
-    case SET_INGREDIENTS:
+    case SET_PIES:
       return { ...action.data };
   
     default:

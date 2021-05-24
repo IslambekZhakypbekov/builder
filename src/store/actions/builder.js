@@ -1,18 +1,18 @@
 import axios from "../../axios";
-import { ADD_INGREDIENT, REMOVE_INGREDIENT, SET_INGREDIENTS } from "./types";
+import { ADD_PIES, REMOVE_PIES, SET_PIES } from "./types";
 
 export const add = (ingredient) => ({
-  type: ADD_INGREDIENT,
+  type: ADD_PIES,
   ingredient: ingredient
 });
 
 export const remove = (ingredient) => ({
-  type: REMOVE_INGREDIENT,
+  type: REMOVE_PIES,
   ingredient: ingredient
 });
 
 export const set = (data) => ({
-  type: SET_INGREDIENTS,
+  type: SET_PIES,
   data: data
 });
 

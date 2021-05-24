@@ -8,13 +8,13 @@ import Button from "../../../UI/Button/Button";
 const PieControl = ({ type, count }) => {
   const dispatch = useDispatch();
   const labels = {
-    tomato: "American Pie",
-    salami: "Pie",
-    greenOlive: "Cake",
-    blackOlive: "Tort",
-    redPepper: "Rort",
-    yellowPepper: "Tort",
-  }
+    applePie: "Apple Pie",
+    cherryPie: "Cherry Pie",
+    fruitCake:"Fruit Pie",
+    nutPie:"Nut Pie ",
+    bun:"Bun",
+    pumpkinPie:"Pumpkin Pie",
+  };
   return (
     <div className={classes.PieControl}>
       <Button onClick={() => dispatch({ type: "ADD_INGREDIENT", ingredient: type })}>+</Button>

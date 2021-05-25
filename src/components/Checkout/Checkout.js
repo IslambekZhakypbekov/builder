@@ -1,12 +1,12 @@
 import PiePreview from "../PieBuilder/PiePreview/PiePreview";
-import CheckoutForm from "./ChekoutForm/CheckoutForm";
+import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "../../axios";
 import { useSelector } from "react-redux";
 import withAxios from "../withAxios";
 
 const Checkout = ({ history }) => {
-  const { token, id } = useSelector(state => state.auth);
+  const { token, id } = useSelector(state => state.auth); 
   const ingredients = useSelector(state => state.builder.ingredients);
   const price = useSelector(state => state.builder.price);
 

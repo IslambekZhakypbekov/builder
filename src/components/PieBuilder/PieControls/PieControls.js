@@ -4,16 +4,16 @@ import Button from "../../UI/Button/Button";
 import PieControl from "./PieControl/PieControl";
 
 const PieControls = ({
-  ingredients,
+  pies,
   startOrdering
 }) => {
   const results = [];
   let total = 0;
-  for (const ingredient in ingredients) {
-    total += ingredients[ingredient];
+  for (const ingredient in pies) {
+    total += pies[ingredient];
     results.push(<PieControl
       key={ingredient}
-      count={ingredients[ingredient]}
+      count={pies[ingredient]}
       type={ingredient} />)
   }
 

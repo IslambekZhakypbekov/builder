@@ -6,7 +6,7 @@ import CheckoutSummary from "./CheckoutSummary/CheckoutSummary"
 // import PiePreview from "../PieBuilder/PiePreview/PiePreview"
 
 const Checkout = ({ history }) => {
-  const ingredients = useSelector(state => state.ingredients);
+  const pies = useSelector(state => state.pies);
   const price = useSelector(state => state.price);
 
   function cancelCallback() {
@@ -22,7 +22,7 @@ const Checkout = ({ history }) => {
       phone: data.get('phone'),
       address: data.get('address'),
 
-      ingredients: ingredients,
+      pies: pies,
       price: price,
     }
 
@@ -34,7 +34,7 @@ const Checkout = ({ history }) => {
 
   return (
     <div>
-      {/* <PiePreview ingredients={ingredients} price={price} /> */}
+      {/* <PiePreview pies={pies} price={price} /> */}
       <CheckoutSummary
         submitCallback={submitCallback}
         cancelCallback={cancelCallback} />

@@ -10,7 +10,7 @@ import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button";
 
 const PieBuilder = ({ history , green}) => {
-  const ingredients = useSelector(state => state.ingredients);
+  const pies = useSelector(state => state.pies);
   const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
 
@@ -23,9 +23,9 @@ const PieBuilder = ({ history , green}) => {
   //       setPrice(response.data.price);
 
   //       // For arrays
-  //       // setIngredients(Object.values(response.data.ingredients));
+  //       // setpies(Object.values(response.data.pies));
   //       // For objects
-  //       setIngredients(response.data.ingredients);
+  //       setpies(response.data.pies);
   //     });
   // }
 
@@ -46,17 +46,17 @@ const PieBuilder = ({ history , green}) => {
   return (
     <div className={classes.PieBuilder}>
       <PiePreview
-        ingredients={ingredients}
+        pies={pies}
         price={price} />
       <PieControls
-        ingredients={ingredients}
+        pies={pies}
         startOrdering={startOrdering}
       />
       <Modal
         show={ordering}
         cancel={stopOrdering}>
         <OrderSummary
-          ingredients={ingredients}
+          pies={pies}
           price={price}
         />
         <Button onClick={finishOrdering} green={green}>Checkout</Button>

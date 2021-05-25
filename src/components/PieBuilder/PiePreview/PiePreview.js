@@ -2,11 +2,11 @@ import classes from "./PiePreview.module.css";
 
 import PieIngredient from "../Pies/Pies";
 
-import ingredientsBackground from "../../../images/plate.png";
-const PiePreview = ({ ingredients, price }) => {
+import piesBackground from "../../../images/plate.png";
+const PiePreview = ({ pies, price }) => {
   const result = [];
-  for (const ingredient in ingredients) {
-    for (let i = 0; i < ingredients[ingredient]; i++) {
+  for (const ingredient in pies) {
+    for (let i = 0; i < pies[ingredient]; i++) {
       result.push(<PieIngredient key={ingredient + i} type={ingredient} />)
     }
   }
@@ -15,8 +15,8 @@ const PiePreview = ({ ingredients, price }) => {
     <div className={classes.PiePreview}>
       
         <div className={classes.Pie}>
-        <div className={classes.ingredients}
-            style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+        <div className={classes.pies}
+            style={{ backgroundImage: `url(${piesBackground})` }}>
             <div className={classes.div}>{result} </div>
           </div>
         </div>

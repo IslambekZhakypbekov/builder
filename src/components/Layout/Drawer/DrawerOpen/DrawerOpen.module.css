@@ -7,14 +7,12 @@
   justify-content: center;
   cursor: pointer;
 }
-
-.DrawerOpen>div {
+.DrawerOpen > div {
   height: 3px;
   width: 2rem;
   background-color: white;
 }
-
-.DrawerOpen>div:not(:last-child) {
+.DrawerOpen > div:not(:last-child) {
   margin-bottom: .5rem;
 }
 

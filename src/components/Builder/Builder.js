@@ -1,8 +1,8 @@
-import PiePreview from "./PiePreview/PiePreview";
-import PieControls from "./PieControls/PieControls";
+import Preview from "./Preview/Preview";
+import Controls from "./Controls/Controls";
 import withAxios from "../withAxios";
 import axios from "../../axios";
-import classes from "./PieBuilder.module.css";
+import classes from "./Builder.module.css";
 import { useEffect, useState } from "react";
 import Modal from "../UI/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
@@ -10,7 +10,7 @@ import Button from "../UI/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { load } from "../../store/actions/builder";
 
-const PieBuilder = ({ history }) => {
+const Builder = ({ history }) => {
   const dispatch = useDispatch();
   const isAuthenticated = useSelector(state => state.auth.token !== null);
   const ingredients = useSelector(state => state.builder.ingredients);
@@ -24,7 +24,7 @@ const PieBuilder = ({ history }) => {
       setOrdering(true);
     }
     else {
-      history.push('/auth');
+      history.push("/auth");
     }
   }
 
@@ -39,11 +39,11 @@ const PieBuilder = ({ history }) => {
   }
 
   return (
-    <div className={classes.PieBuilder}>
-      <PiePreview
+    <div className={classes.Builder}>
+      <Preview
         ingredients={ingredients}
         price={price} />
-      <PieControls
+      <Controls
         ingredients={ingredients}
         startOrdering={startOrdering}
         />
@@ -61,4 +61,4 @@ const PieBuilder = ({ history }) => {
   );
 }
 
-export default withAxios(PieBuilder, axios);
+export default withAxios(Builder, axios);

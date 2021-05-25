@@ -5,14 +5,12 @@
   display: block;
   padding: .5rem 1rem .35rem;
 }
-
 .NavItem a:hover {
   border-color: white;
-  background-color: rgb(7, 31, 165);
-  transition: 0.4s;
+  background-color: rgb(236, 47, 14);
 }
-
-.NavItem a:active, .NavItem a.active {
+.NavItem a:active,
+.NavItem a.active {
   border-color: white;
 }
 

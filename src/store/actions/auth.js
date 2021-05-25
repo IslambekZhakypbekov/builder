@@ -31,7 +31,7 @@ export const restore = () => {
     const localId = localStorage.getItem('localId');
 
     if (idToken && localId) {
-      dispatch(success({idToken, localId}))
+      success(dispatch, { idToken, localId });
     }
     else {
       dispatch(logout());
@@ -39,7 +39,7 @@ export const restore = () => {
   };
 };
 
-const key = "AIzaSyDScfhXD98Tm1i1-NOXWEtOYZ7pGThNakM";
+const key = "AIzaSyBmNRW4Dy30bYbbVl7kHd3d_HbPTh4o9R8";
 export const auth = (method, email, password) => {
   const url = method === "signin"
     ? "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key="
@@ -47,7 +47,7 @@ export const auth = (method, email, password) => {
   const data = {
     email,
     password,
-    returnSecureToken: true   
+    returnSecureToken: true
   };
 
   return (dispatch) => axios.post(url + key, data)

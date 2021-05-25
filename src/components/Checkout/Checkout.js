@@ -1,4 +1,4 @@
-import PiePreview from "../PieBuilder/PiePreview/PiePreview";
+import  Preview from "../Builder/Preview/Preview";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "../../axios";
@@ -33,7 +33,7 @@ const Checkout = ({ history }) => {
 
   return (
     <div className={classes.Checkout}>
-      <PiePreview ingredients={ingredients} price={price} />
+      < Preview ingredients={ingredients} price={price} />
       <CheckoutForm
         cancelCallback={cancelCallback}
         submitCallback={submitCallback} />

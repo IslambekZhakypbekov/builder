@@ -1,15 +1,10 @@
-.PieControl {
+.Control {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: .5rem 0;
 }
-
-.PieControl .ingredient div {
+.Control .ingredient div {
   position: static;
   margin: 0 .5rem;
-}
-
-.ingredien {
-  font-size: 9.2rem;
 }

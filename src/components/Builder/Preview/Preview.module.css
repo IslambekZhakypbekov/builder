@@ -1,35 +1,31 @@
-.PiePreview {
+.Preview {
   flex: 0 0 400px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
   justify-content: center;
-  margin-right: 50px;
 }
-
-.Pie {
-  width: 500px;
-  height: 500px;
+.Pie{
+  width: 400px;
+  height: 400px;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  border-radius: 10%;
+  border-radius: 100%;
+  background-color: #fcc067;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .ingredients {
-  width: 470px;
-  height: 100%;
-  width: 100%;
-  border-radius: 10%;
+  width: 380px;
+  height: 380px;
+  border-radius: 100%;
   position: relative;
-  background-size: cover;
 }
-
 .price {
-  background-color: rgb(7, 31, 165);
-  border-radius: 0rem;
+  background-color: tomato;
+  border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.5rem;
   color: white;

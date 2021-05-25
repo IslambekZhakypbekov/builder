@@ -1,45 +1,44 @@
+import PiePreview from "../PieBuilder/PiePreview/PiePreview";
+import CheckoutForm from "./ChekoutForm/CheckoutForm";
+import classes from "./Checkout.module.css";
 import axios from "../../axios";
 import { useSelector } from "react-redux";
-
-
-import CheckoutSummary from "./CheckoutSummary/CheckoutSummary"
-// import PiePreview from "../PieBuilder/PiePreview/PiePreview"
+import withAxios from "../withAxios";
 
 const Checkout = ({ history }) => {
-  const pies = useSelector(state => state.pies);
-  const price = useSelector(state => state.price);
+  const { token, id } = useSelector(state => state.auth);
+  const ingredients = useSelector(state => state.builder.ingredients);
+  const price = useSelector(state => state.builder.price);
 
   function cancelCallback() {
     history.replace('/');
   }
 
   function submitCallback(event) {
-    event.preventDefault();
-
     const data = new FormData(event.target);
-    const order = {
+
+    axios.post('/orders.json?auth=' + token, {
       name: data.get('name'),
-      phone: data.get('phone'),
       address: data.get('address'),
-
-      pies: pies,
+      phone: data.get('phone'),
+      ingredients: ingredients,
       price: price,
-    }
+      userId: id
+    }).then(response => {
+      history.replace('/');
+    });
 
-    axios.post('https://builder-56e21-default-rtdb.firebaseio.com/orders.json', order)
-      .then(response => {
-        history.replace('/');
-      });
+    event.preventDefault();
   }
 
   return (
-    <div>
-      {/* <PiePreview pies={pies} price={price} /> */}
-      <CheckoutSummary
-        submitCallback={submitCallback}
-        cancelCallback={cancelCallback} />
+    <div className={classes.Checkout}>
+      <PiePreview ingredients={ingredients} price={price} />
+      <CheckoutForm
+        cancelCallback={cancelCallback}
+        submitCallback={submitCallback} />
     </div>
   );
 }
-
-export default Checkout;
+ 
+export default withAxios(Checkout, axios);

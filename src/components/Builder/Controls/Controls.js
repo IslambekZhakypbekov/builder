@@ -9,9 +9,7 @@ const Controls = ({
   const results = [];
   let total = 0;
   for (const ingredient in ingredients) {
-    // Add ingredient number to totals number
     total += ingredients[ingredient];
-    // Render  control for this ingredient
     results.push(<Control
         key={ingredient}
         count={ingredients[ingredient]}

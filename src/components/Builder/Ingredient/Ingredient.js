@@ -1,21 +1,21 @@
 import React from "react";
 
 import classes from "./Ingredient.module.css";
-import salamiBackground from "../../../images/salami.svg";
-import tomatoBackground from "../../../images/tomato.svg";
-import blackOliveBackground from "../../../images/blackOlive.svg";
-import greenOliveBackground from "../../../images/greenOlive.svg";
-import redPepperBackground from "../../../images/redPepper.svg";
-import yellowPepperBackground from "../../../images/yellowPepper.svg";
+import applePie from "../../../images/applePie.jpg";
+import bun from "../../../images/bun.png";
+import cherryPie from "../../../images/cherryPie.png";
+import nutPie from "../../../images/nutPie.png";
+import fruitCake from "../../../images/fruitCake.png";
+import pumpkinPie from "../../../images/pumpkinPie.png";
 
 const Ingredient = ({ type, fixed }) => {
   const types = {
-    applePie: { backgroundImage: `url(${salamiBackground})`, width: "35px", height: "35px" },
-    cherryPie: { backgroundImage: `url(${tomatoBackground})`, width: "35px", height: "35px" },
-    bun: { backgroundImage: `url(${blackOliveBackground})`, width: "10px", height: "10px" },
-    friutCake: { backgroundImage: `url(${greenOliveBackground})`, width: "10px", height: "10px" },
-    nutPie: { backgroundImage: `url(${redPepperBackground})`, width: "20px", height: "20px" },
-    pumpkinPie: { backgroundImage: `url(${yellowPepperBackground})`, width: "40px", height: "40px" },
+    applePie: { backgroundImage: `url(${applePie})`, width: "35px", height: "35px" },
+    cherryPie: { backgroundImage: `url(${bun})`, width: "35px", height: "35px" },
+    bun: { backgroundImage: `url(${cherryPie})`, width: "10px", height: "10px" },
+    fruitCake: { backgroundImage: `url(${fruitCake})`, width: "10px", height: "10px" },
+    nutPie: { backgroundImage: `url(${nutPie})`, width: "20px", height: "20px" },
+    pumpkinPie: { backgroundImage: `url(${pumpkinPie})`, width: "40px", height: "40px" },
   };
 
   function getPosition(ingredientWidth) {
@@ -37,7 +37,10 @@ const Ingredient = ({ type, fixed }) => {
       }
       : getPosition(ingredientWidth);
   }
-
+if (!types[type]) {
+  console.log(types);
+  console.log(type);
+}
   if (!fixed) {
     const position = getPosition(types[type].width);
     types[type].top = position.top + "px";

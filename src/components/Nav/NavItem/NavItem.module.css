@@ -6,12 +6,14 @@
   padding: .5rem 1rem .35rem;
 }
 .NavItem a:hover {
-  border-color: white;
-  background-color: rgb(236, 47, 14);
+  border-color: darkblue;
+  background-color: white;
+  color: blue;
+  transition: .5s;
 }
 .NavItem a:active,
 .NavItem a.active {
-  border-color: white;
+  border-color: darkblue;
 }
 
 @media (max-width: 549px) {

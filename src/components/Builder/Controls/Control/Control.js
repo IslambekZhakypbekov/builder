@@ -8,11 +8,11 @@ const Control = ({ type, count }) => {
   const dispatch = useDispatch();
   const labels = {
     applePie: "Apple Pie",
-    cherryPie:"Salami",
-    bun:"Green olives",
-    friutCake:"Black olives",
-    nutPie:"Red pepper",
-    pumpkinPie: "Yellow pepper",
+    cherryPie:"Bun",
+    bun:"Cherry Pie",
+    friutCake:"Pumpkin Pie",
+    nutPie:"Fruit Cake",
+    pumpkinPie: "Nut Pie",
   }
   return (
     <div className={classes.Control}>

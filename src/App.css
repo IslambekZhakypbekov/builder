@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
 * {
-  font-family: 'Architects Daughter', cursive;
-  box-sizing: border-box;
+  font-family: 'Odibee Sans', cursive;
+    box-sizing: border-box;
 }
 body {
   margin: 0;

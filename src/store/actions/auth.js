@@ -39,7 +39,7 @@ export const restore = () => {
   };
 };
 
-const key = "AIzaSyBmNRW4Dy30bYbbVl7kHd3d_HbPTh4o9R8";
+const key = "AIzaSyDScfhXD98Tm1i1-NOXWEtOYZ7pGThNakM";
 export const auth = (method, email, password) => {
   const url = method === "signin"
     ? "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key="

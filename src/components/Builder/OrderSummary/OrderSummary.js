@@ -2,12 +2,12 @@ import classes from "./OrderSummary.module.css";
 
 const OrderSummary = ({ ingredients, price }) => {
   const labels = {
-    tomato: "Tomatoes",
-    salami: "Salami",
-    greenOlive: "Green olives",
-    blackOlive: "Black olives",
-    redPepper: "Red pepper",
-    yellowPepper: "Yellow pepper",
+    applePie: "Apple Pie",
+    cherryPie:"Salami",
+    bun:"Green olives",
+    friutCake:"Black olives",
+    nutPie:"Red pepper",
+    pumpkinPie: "Yellow pepper",
   }
   const results = Object.keys(ingredients)
     .map(type => <li key={type}>{labels[type]}: {ingredients[type]}</li>);

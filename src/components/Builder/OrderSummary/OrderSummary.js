@@ -9,7 +9,6 @@ const OrderSummary = ({ ingredients, price }) => {
     friutCake:"Pumpkin Pie",
     nutPie:"Fruit Cake",
     pumpkinPie: "Nut Pie",
-    cake: "Cake",
   
   }
   const results = Object.keys(ingredients)
@@ -18,7 +17,7 @@ const OrderSummary = ({ ingredients, price }) => {
   return (
     <div className={classes.OrderSummary}>
       <h3>Order summary</h3>
-      <ul>
+      <ul className={classes.results}>
         {results}
       </ul>
       <strong>Total price: {price.toFixed(1)} som</strong>

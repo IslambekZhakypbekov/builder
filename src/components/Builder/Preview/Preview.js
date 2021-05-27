@@ -1,7 +1,7 @@
 import Ingredient from "../Ingredient/Ingredient";
 
 import classes from "./Preview.module.css";
-import ingredientsBackground from "../../../images/plate.png";
+import ingredientsBackground from "../../../images/plate.svg";
 
 const Preview = ({ ingredients, price }) => {
   const result = [];

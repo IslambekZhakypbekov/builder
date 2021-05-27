@@ -1,4 +1,5 @@
 .Order {
+    margin-left: 500px;
     list-style-type: none;
     display: flex;
     flex-direction: column;

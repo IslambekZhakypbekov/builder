@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('http://fonts.cdnfonts.com/css/billabong');
 * {
-  font-family: 'Odibee Sans', cursive;
-    box-sizing: border-box;
+  font-family: 'Billabong', sans-serif;
+      box-sizing: border-box;
 }
 body {
   margin: 0;
+  background-image: url(./images/background.jpg);
 }

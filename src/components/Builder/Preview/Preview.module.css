@@ -4,33 +4,29 @@
   flex-wrap: wrap;
   margin-bottom: 1rem;
   justify-content: center;
-  margin-right: 50px;
+  margin-right: 100px;
 }
-
 .Pie {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  border-radius: 10%;
+  background-size:cover ;
+  
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .ingredients {
-  height: 100%;
-  width: 100%;
-  border-radius: 10%;
-  display: flex;
-  flex-direction:row-reverse;
-  flex-wrap: wrap;
-  background-size: cover;
+  background-size:cover ;
+  width: 380px;
+  height: 380px;
+  position: relative;
 }
-
 .price {
-  background-color: rgb(7, 31, 165);
-  border-radius: 0rem;
+  background-color: tomato;
+  border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.5rem;
   color: white;

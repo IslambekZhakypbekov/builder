@@ -4,6 +4,7 @@
   font-size: 1.5rem;
   justify-content: center;
   text-align: center;
+  margin-left: -150px;
 }
 .CheckoutForm > div {
   flex: 0 0 100%;

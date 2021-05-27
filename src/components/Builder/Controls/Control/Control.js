@@ -6,10 +6,10 @@ import classes from "./Control.module.css";
 
 const Control = ({ type, count }) => {
   const dispatch = useDispatch();
-  const labels = {
+  const labels = {   
+     bun:"Bun",
     applePie: "Apple Pie",
-    cherryPie:"Bun",
-    bun:"Cherry Pie",
+    cherryPie:"Cherry Pie",
     friutCake:"Pumpkin Pie",
     nutPie:"Fruit Cake",
     pumpkinPie: "Nut Pie",

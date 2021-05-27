@@ -25,10 +25,15 @@
   position: relative;
 }
 .price {
-  background-color: tomato;
+  background-color: blue;
   border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.5rem;
   color: white;
   font-weight: bold;
+}
+@media (max-width: 800px){
+  .Preview{
+    margin-left: 120px;
+  }
 }

@@ -21,8 +21,10 @@
 }
 
 .green {
-  background-color: rgb(137, 255, 133);
+  background-color: blue;
+  color: white;
 }
 .green:not(:disabled):hover {
-  background-color: rgb(49, 172, 0);
+  background-color: white;
+  color: blue;
 }

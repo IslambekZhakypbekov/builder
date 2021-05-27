@@ -3,12 +3,12 @@ import classes from "./OrderSummary.module.css";
 const OrderSummary = ({ ingredients, price }) => {
   const labels = {
     bun:"Bun",
-
-    // applePie: "Apple Pie",
-    // cherryPie:"Cherry Pie",
-    // friutCake:"Pumpkin Pie",
-    // nutPie:"Fruit Cake",
-    // pumpkinPie: "Nut Pie",
+    cake:"Cake", 
+    applePie: "Apple Pie",
+    cherryPie:"Cherry Pie",
+    friutCake:"Pumpkin Pie",
+    nutPie:"Fruit Cake",
+    pumpkinPie: "Nut Pie",
   
   }
   const results = Object.keys(ingredients)

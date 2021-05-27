@@ -4,20 +4,23 @@ import classes from "./Ingredient.module.css";
 import applePie from "../../../images/applePie.png";
 import bun from "../../../images/bun.png";
 import cherryPie from "../../../images/cherryPie.png";
-import nutPie from "../../../images/nutPie.png";
+import cake from "../../../images/cake.png";
 import fruitCake from "../../../images/fruitCake.png";
 import pumpkinPie from "../../../images/pumpkinPie.png";
+import nutPie from '../../../images/nutPie.png'
     
 
 
 const Ingredient = ({ type, fixed }) => {
   const types = {
     applePie: { backgroundImage: `url(${applePie})`, width: "35px", height: "35px" },
-    cherryPie: { backgroundImage: `url()`, width: "35px", height: "35px" },
-    bun: { backgroundImage: `url()`, width: "50px", height: "50px" },
-    fruitCake: { backgroundImage: `url()`, width: "10px", height: "10px" },
-    nutPie: { backgroundImage: `url()`, width: "20px", height: "20px" },
+    cherryPie: { backgroundImage: `url(${cherryPie})`, width: "35px", height: "35px" },
+    bun: { backgroundImage: `url(${bun})`, width: "50px", height: "50px" },
+    fruitCake: { backgroundImage: `url(${fruitCake})`, width: "10px", height: "10px" },
+    cake: { backgroundImage: `url(${cake})`, width: "20px", height: "20px" },
     pumpkinPie: { backgroundImage: `url(${pumpkinPie})`, width: "40px", height: "40px" },
+    nutPie: { backgroundImage: `url(${nutPie})`, width: "40px", height: "40px" },
+
   };
 
   function getPosition(ingredientWidth) {

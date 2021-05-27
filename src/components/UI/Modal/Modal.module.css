@@ -9,11 +9,16 @@
   padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   transition: transform .3s ease-out;
+  margin-left: -35px;
+  border-radius: 10%;
+}
+.Modal{
+  background-color:blue ;
 }
 
 @media (max-width: 800px) {
   .content {
     width: 80%;
     left: 10%;
-  }
+  } 
 }

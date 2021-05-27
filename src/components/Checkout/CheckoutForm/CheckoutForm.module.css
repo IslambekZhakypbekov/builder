@@ -4,7 +4,7 @@
   font-size: 1.5rem;
   justify-content: center;
   text-align: center;
-  margin-left: -150px;
+  margin-left: -50px;
 }
 .CheckoutForm > div {
   flex: 0 0 100%;
@@ -23,4 +23,13 @@
 .CheckoutForm > div > input:focus {
   outline: none;
   border-color: darkgray;
+}
+.CheckoutForm > div> label{
+  font-weight: bold;
+}
+ .buttons{
+  margin-left: 55px;
+  margin-top: 25px;
+  
+
 }

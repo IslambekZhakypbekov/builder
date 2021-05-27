@@ -1,6 +1,6 @@
-export const ADD_INGREDIENT = "ADD_INGREDIENT";
-export const REMOVE_INGREDIENT = "REMOVE_INGREDIENT";
-export const SET_INGREDIENTS = "SET_INGREDIENTS";
+export const ADD_PIE = "ADD_PIE";
+export const REMOVE_PIE = "REMOVE_PIE";
+export const SET_PIES = "SET_PIES";
 
 export const SET_ORDERS = "SET_ORDERS";
 

@@ -34,7 +34,6 @@ const Builder = ({ history }) => {
 
   function finishOrdering() {
     setOrdering(false);
-    // loadDefaults();
     history.push('/checkout');
   }
 

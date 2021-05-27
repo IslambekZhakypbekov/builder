@@ -31,7 +31,8 @@ export const restore = () => {
     const localId = localStorage.getItem('localId');
 
     if (idToken && localId) {
-      success(dispatch, { idToken, localId });
+      dispatch(success({idToken,localId}));
+  
     }
     else {
       dispatch(logout());
@@ -47,7 +48,7 @@ export const auth = (method, email, password) => {
   const data = {
     email,
     password,
-    returnSecureToken: true
+    returnSecureToken:true
   };
 
   return (dispatch) => axios.post(url + key, data)

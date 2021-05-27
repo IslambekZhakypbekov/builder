@@ -9,7 +9,7 @@
   border-color: darkblue;
   background-color: white;
   color: blue;
-  transition: .5s;
+  transition: 1s;
 }
 .NavItem a:active,
 .NavItem a.active {

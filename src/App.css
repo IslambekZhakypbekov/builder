@@ -1,8 +1,9 @@
-@import url('http://fonts.cdnfonts.com/css/billabong');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 * {
-  font-family: 'Billabong', sans-serif;
-      box-sizing: border-box;
+  font-family: 'Sigmar One', cursive;
+  box-sizing: border-box;
 }
+
 body {
   margin: 0;
   background-image: url(./images/background.jpg);

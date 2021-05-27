@@ -1,25 +1,26 @@
 import React from "react";
 
 import classes from "./Ingredient.module.css";
-import applePie from "../../../images/applePie.png";
-import bun from "../../../images/bun.png";
-import cherryPie from "../../../images/cherryPie.png";
-import cake from "../../../images/cake.png";
-import fruitCake from "../../../images/fruitCake.png";
-import pumpkinPie from "../../../images/pumpkinPie.png";
-import nutPie from '../../../images/nutPie.png'
+import applePie from "../../../images/applePie.svg";
+import cherryPie from "../../../images/cherryPie.svg";
+import cake from "../../../images/cake.svg";
+import pumpkinPie from "../../../images/pumpkinPie.svg";
+import fruitCake from "../../../images/fruitCake.svg";
+import nutPie from "../../../images/nutPie.svg";
+import bun from "../../../images/bun.svg";
+
     
 
 
 const Ingredient = ({ type, fixed }) => {
   const types = {
-    applePie: { backgroundImage: `url(${applePie})`, width: "35px", height: "35px" },
-    cherryPie: { backgroundImage: `url(${cherryPie})`, width: "35px", height: "35px" },
-    bun: { backgroundImage: `url(${bun})`, width: "50px", height: "50px" },
-    fruitCake: { backgroundImage: `url(${fruitCake})`, width: "10px", height: "10px" },
-    cake: { backgroundImage: `url(${cake})`, width: "20px", height: "20px" },
-    pumpkinPie: { backgroundImage: `url(${pumpkinPie})`, width: "40px", height: "40px" },
-    nutPie: { backgroundImage: `url(${nutPie})`, width: "40px", height: "40px" },
+    applePie: { backgroundImage: `url(${applePie})`, width: "60px", height: "40px" },
+    cherryPie: { backgroundImage: `url(${cherryPie})`, width: "60px", height: "40px" },
+    bun: { backgroundImage: `url(${bun})`, width: "80px", height: "50px" },
+    fruitCake: { backgroundImage: `url(${fruitCake})`, width: "60px", height: "50px" },
+    cake: { backgroundImage: `url(${cake})`, width: "50px", height: "50px" },
+    pumpkinPie: { backgroundImage: `url(${pumpkinPie})`, width: "65px", height: "40px" },
+    nutPie: { backgroundImage: `url(${nutPie})`, width: "60px", height: "35px" },
 
   };
 

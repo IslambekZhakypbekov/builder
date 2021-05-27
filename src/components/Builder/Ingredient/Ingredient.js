@@ -17,7 +17,7 @@ const Ingredient = ({ type, fixed }) => {
     applePie: { backgroundImage: `url(${applePie})`, width: "60px", height: "40px" },
     cherryPie: { backgroundImage: `url(${cherryPie})`, width: "60px", height: "40px" },
     bun: { backgroundImage: `url(${bun})`, width: "80px", height: "50px" },
-    fruitCake: { backgroundImage: `url(${fruitCake})`, width: "60px", height: "50px" },
+    fruitCake: { backgroundImage: `url(${fruitCake})`, width: "50px", height: "50px" },
     cake: { backgroundImage: `url(${cake})`, width: "50px", height: "50px" },
     pumpkinPie: { backgroundImage: `url(${pumpkinPie})`, width: "65px", height: "40px" },
     nutPie: { backgroundImage: `url(${nutPie})`, width: "60px", height: "35px" },
@@ -44,14 +44,12 @@ const Ingredient = ({ type, fixed }) => {
       : getPosition(ingredientWidth);
   }
 
-  // Get random position for this ingredient.
   if (!fixed) {
     const position = getPosition(types[type].width);
     types[type].top = position.top + "px";
     types[type].left = position.left + "px";
   }
-  // Get random rotation for this ingredient.
-  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+  types[type].transform = `rotate(${Math.round(Math.random() * 45)}deg)`;
 
   return (
     <div className={classes.Ingredient} style={types[type]}></div>

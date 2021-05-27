@@ -6,21 +6,23 @@ import classes from "./Control.module.css";
 
 const Control = ({ type, count }) => {
   const dispatch = useDispatch();
-  const labels = {   
-     bun:"Bun",
+  const labels = {
     applePie: "Apple Pie",
-    cherryPie:"Cherry Pie",
-    friutCake:"Pumpkin Pie",
-    nutPie:"Fruit Cake",
-    pumpkinPie: "Nut Pie",
+    bun: "Bun",
     cake: "Cake",
+    cherryPie: "Cherry Pie",
+    fruitCake: "Fruit Pie",
+    nutPie: "Nut Pie",
+    pumpkinPie: "Pumpkin Pie",
+
+   
   }
   return (
     <div className={classes.Control}>
       <Button onClick={() => dispatch(add(type))}>+</Button>
       <div className={classes.ingredient}>
-{labels[type]}    
-  </div>
+        {labels[type]}
+      </div>
       <Button onClick={() => dispatch(remove(type))} disabled={!count}>-</Button>
     </div>
   );

@@ -1,4 +1,5 @@
 .Ingredient {
   position: absolute;
   z-index: 0.1;
+  background-size: cover;
 }

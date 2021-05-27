@@ -23,6 +23,7 @@
   width: 380px;
   height: 380px;
   position: relative;
+  z-index: -1;
 }
 .price {
   background-color: blue;

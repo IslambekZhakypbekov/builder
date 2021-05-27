@@ -13,6 +13,7 @@ const Control = ({ type, count }) => {
     friutCake:"Pumpkin Pie",
     nutPie:"Fruit Cake",
     pumpkinPie: "Nut Pie",
+    cake: "Cake",
   }
   return (
     <div className={classes.Control}>

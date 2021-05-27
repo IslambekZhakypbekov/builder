@@ -9,6 +9,7 @@ const OrderSummary = ({ ingredients, price }) => {
     friutCake:"Pumpkin Pie",
     nutPie:"Fruit Cake",
     pumpkinPie: "Nut Pie",
+    cake: "Cake",
   
   }
   const results = Object.keys(ingredients)

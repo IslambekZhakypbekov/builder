@@ -20,7 +20,7 @@ const Ingredient = ({ type, fixed }) => {
     fruitCake: { backgroundImage: `url(${fruitCake})`, width: "50px", height: "50px" },
     cake: { backgroundImage: `url(${cake})`, width: "50px", height: "50px" },
     pumpkinPie: { backgroundImage: `url(${pumpkinPie})`, width: "65px", height: "40px" },
-    nutPie: { backgroundImage: `url(${nutPie})`, width: "60px", height: "35px" },
+    nutPie: { backgroundImage: `url(${nutPie})`, width: "60px", height: "60px" },
 
   };
 

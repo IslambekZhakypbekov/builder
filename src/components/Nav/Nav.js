@@ -8,9 +8,9 @@ const Nav = () => {
   return (
     <ul className={classes.Nav}>
       <NavItem url="/" exact>Builder</NavItem>
-      { !isAuthenticated ? <NavItem url="/auth">Login</NavItem> : null }
-      { isAuthenticated ? <NavItem url="/orders">Orders</NavItem> : null }
-      { isAuthenticated ? <NavItem url="/logout">Logout</NavItem> : null }
+      { !isAuthenticated ? <NavItem url="/auth">Login</NavItem> : null}
+      { isAuthenticated ? <NavItem url="/orders">Orders</NavItem> : null}
+      { isAuthenticated ? <NavItem url="/logout">Logout</NavItem> : null}
     </ul>
   );
 }

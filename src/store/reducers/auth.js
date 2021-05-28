@@ -30,7 +30,7 @@ const auth = (state = initialState, action) => {
         token: null,
         id: null
       };
-  
+
     default:
       return state;
   }

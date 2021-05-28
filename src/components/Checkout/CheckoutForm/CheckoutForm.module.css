@@ -6,30 +6,34 @@
   text-align: center;
   margin-left: -50px;
 }
-.CheckoutForm > div {
+
+.CheckoutForm>div {
   flex: 0 0 100%;
   padding: .2rem 1rem;
 }
-.CheckoutForm > div > label::after {
+
+.CheckoutForm>div>label::after {
   content: ":";
   margin-right: 1rem;
 }
-.CheckoutForm > div > input {
+
+.CheckoutForm>div>input {
   border-radius: 1rem;
   border: 1px solid lightgray;
   font-size: 1.5rem;
   padding: 0 1rem;
 }
-.CheckoutForm > div > input:focus {
+
+.CheckoutForm>div>input:focus {
   outline: none;
   border-color: darkgray;
 }
-.CheckoutForm > div> label{
+
+.CheckoutForm>div>label {
   font-weight: bold;
 }
- .buttons{
+
+.buttons {
   margin-left: 55px;
   margin-top: 25px;
-  
-
 }

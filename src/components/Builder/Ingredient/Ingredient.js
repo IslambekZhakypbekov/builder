@@ -9,7 +9,7 @@ import fruitCake from "../../../images/fruitCake.svg";
 import nutPie from "../../../images/nutPie.svg";
 import bun from "../../../images/bun.svg";
 
-    
+
 
 
 const Ingredient = ({ type, fixed }) => {

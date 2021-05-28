@@ -36,7 +36,7 @@ const App = () => {
         <Route path="/logout" component={Logout} />
         <Redirect to="/" />
       </Switch>
-    ); 
+    );
   }
 
   return (

@@ -6,25 +6,26 @@
   justify-content: center;
   margin-right: 100px;
 }
+
 .Pie {
   width: 400px;
   height: 400px;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  background-size:cover ;
-  
-
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .ingredients {
-  background-size:cover ;
+  background-size: cover;
   width: 380px;
   height: 380px;
   position: relative;
   z-index: -1;
 }
+
 .price {
   background-color: blue;
   border-radius: 1rem;
@@ -33,8 +34,9 @@
   color: white;
   font-weight: bold;
 }
-@media (max-width: 800px){
-  .Preview{
-    margin-left: 120px;
+
+@media (max-width: 800px) {
+  .Preview {
+    margin-left: 130px;
   }
 }

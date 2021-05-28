@@ -12,8 +12,8 @@ const prices = {
   cherryPie: 60,
   redPepper: 25,
   fruitCake: 42,
-  nutPie:13,
-  pumpkinPie:55,
+  nutPie: 13,
+  pumpkinPie: 55,
 };
 
 const builder = (state = initialState, action) => {
@@ -21,18 +21,16 @@ const builder = (state = initialState, action) => {
 
   switch (action.type) {
     case ADD_PIE:
-      console.log(action);
       newState.ingredients[action.ingredient]++;
       newState.price += prices[action.ingredient];
       break;
     case REMOVE_PIE:
-      console.log(action);
       newState.ingredients[action.ingredient]--;
       newState.price -= prices[action.ingredient];
       break;
     case SET_PIES:
       return { ...action.data };
-  
+
     default:
       break;
   }

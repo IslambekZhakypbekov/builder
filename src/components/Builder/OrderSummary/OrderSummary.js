@@ -3,12 +3,12 @@ import classes from "./OrderSummary.module.css";
 const OrderSummary = ({ ingredients, price }) => {
   const labels = {
     applePie: "Apple Pie",
-      bun: "Bun",
-      cake: "Cake",
-      cherryPie: "Cherry Pie",
-      fruitCake: "Fruit Pie",
-      nutPie: "Nut Pie",
-      pumpkinPie: "Punpkin Pie",
+    bun: "Bun",
+    cake: "Cake",
+    cherryPie: "Cherry Pie",
+    fruitCake: "Fruit Pie",
+    nutPie: "Nut Pie",
+    pumpkinPie: "Punpkin Pie",
 
 
   }

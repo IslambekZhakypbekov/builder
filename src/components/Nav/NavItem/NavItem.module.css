@@ -5,14 +5,15 @@
   display: block;
   padding: .5rem 1rem .35rem;
 }
+
 .NavItem a:hover {
   border-color: darkblue;
   background-color: white;
   color: blue;
   transition: 1s;
 }
-.NavItem a:active,
-.NavItem a.active {
+
+.NavItem a:active, .NavItem a.active {
   border-color: darkblue;
 }
 

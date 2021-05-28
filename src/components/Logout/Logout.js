@@ -12,5 +12,5 @@ const Logout = ({ history }) => {
 
   return null;
 }
- 
+
 export default Logout;

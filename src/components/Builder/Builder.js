@@ -45,17 +45,17 @@ const Builder = ({ history }) => {
       <Controls
         ingredients={ingredients}
         startOrdering={startOrdering}
-        />
+      />
       <Modal
         show={ordering}
         cancel={stopOrdering}>
-          <OrderSummary
-            ingredients={ingredients}
-            price={price}
-            />
-          <Button onClick={finishOrdering} green="green">Checkout</Button>
-          <Button onClick={stopOrdering}>Cancel</Button>
-        </Modal>
+        <OrderSummary
+          ingredients={ingredients}
+          price={price}
+        />
+        <Button onClick={finishOrdering} green="green">Checkout</Button>
+        <Button onClick={stopOrdering}>Cancel</Button>
+      </Modal>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import { useDispatch } from "react-redux";
 import { add, remove } from "../../../../store/actions/builder";
 import Button from "../../../UI/Button/Button";
-// import Ingredient from "../../Ingredient/Ingredient";
 import classes from "./Control.module.css";
 
 const Control = ({ type, count }) => {

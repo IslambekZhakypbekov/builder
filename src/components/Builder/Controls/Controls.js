@@ -11,9 +11,9 @@ const Controls = ({
   for (const ingredient in ingredients) {
     total += ingredients[ingredient];
     results.push(<Control
-        key={ingredient}
-        count={ingredients[ingredient]}
-        type={ingredient} />)
+      key={ingredient}
+      count={ingredients[ingredient]}
+      type={ingredient} />)
   }
 
   return (

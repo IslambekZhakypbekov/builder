@@ -11,7 +11,7 @@ const orders = (state = initialState, action) => {
           id: id,
         };
       });;
-  
+
     default:
       break;
   }

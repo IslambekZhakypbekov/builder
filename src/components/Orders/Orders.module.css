@@ -1,3 +1,11 @@
-.Orders{
-    margin-left: 339px;
+.Orders {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:953px) {
+    .Orders {
+        flex-direction: column;
+    }
 }
